@@ -9,30 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="icon" type="image/png" href="bcc-assets/ChatGPT Image Aug 5, 2026, 03_43_39 PM.png" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
         <div class="container">
 
             <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
                 <img src="bcc-assets/ChatGPT Image Aug 5, 2026, 03_43_39 PM.png" alt="Church Logo" width="40"
                     height="40" class="rounded-circle me-2" />
-                <span>Covenant of Light</span>
+                <span>Covenant of Light Church</span>
             </a>
 
             <!-- Mobile Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                 aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navbar Content -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
+            <!-- Navbar Content (Stacked vertically on mobile, horizontal on lg screens) -->
+            <div class="collapse navbar-collapse flex-lg-row flex-column w-100" id="mainNavbar">
                 <!-- Navigation Links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
                     <li class="nav-item">
-                        <a class="nav-link active mx-lg-2" href="#home"> Home </a>
+                        <a class="nav-link mx-lg-2" href="#home"> Home </a>
                     </li>
 
                     <li class="nav-item">
@@ -52,7 +53,11 @@
                     </li>
                 </ul>
 
-                <a href="#about" class="btn btn-primary">Join Us</a>
+                <div class="ms-lg-3 text-center pb-2 pb-lg-0">
+                    <a href="#visit-card" class="btn btn-primary">Join Us</a>
+                </div>
+
+
             </div>
         </div>
     </nav>
@@ -96,7 +101,7 @@
                                 Join Us This Sunday
                             </a>
 
-                            <a href="#about" class="btn btn-outline-light rounded-pill">
+                            <a href="#visit-card" class="btn btn-outline-light rounded-pill">
                                 Plan Your Visit
                             </a>
                         </div>
@@ -122,7 +127,7 @@
                         </p>
 
                         <div class="hero-buttons">
-                            <a href="#sermons" class="btn btn-primary rounded-pill">
+                            <a href="https://t.me/theprayingchurch" class="btn btn-primary rounded-pill">
                                 Watch Sermons
                             </a>
                         </div>
@@ -149,7 +154,7 @@
                         </p>
 
                         <div class="hero-buttons">
-                            <a href="#ministry" class="btn btn-primary rounded-pill">
+                            <a href="#contact" class="btn btn-primary rounded-pill">
                                 Get Connected
                             </a>
                         </div>
@@ -193,7 +198,8 @@
                         </p>
 
                         <!-- CTA -->
-                        <a href="#" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold mt-3">
+                        <a href="story.html" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold mt-3"
+                            target="_blank">
                             Discover Our Story
                             <span class="ms-2">→</span>
                         </a>
@@ -243,7 +249,7 @@
                                 fellowship, and spiritual renewal.
                             </p>
 
-                            <a href="#" class="event-link">
+                            <a href="#visit-card" class="event-link">
                                 Join Us
                                 <span>→</span>
                             </a>
@@ -274,7 +280,7 @@
                                 worship, and hearing from God.
                             </p>
 
-                            <a href="#" class="event-link">
+                            <a href="#visit-card" class="event-link">
                                 Join Us
                                 <span>→</span>
                             </a>
@@ -305,7 +311,7 @@
                                 an atmosphere of God's presence.
                             </p>
 
-                            <a href="#" class="event-link">
+                            <a href="#visit-card" class="event-link">
                                 Join Us
                                 <span>→</span>
                             </a>
@@ -315,71 +321,48 @@
             </div>
 
             <!-- View All Events -->
-            <div class="text-center mt-5">
+            <!-- <div class="text-center mt-5">
                 <a href="#" class="btn btn-dark rounded-pill px-4 py-3 fw-semibold">
                     View All Events
                     <span class="ms-2">→</span>
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
-    <section class="py-5 mb-5 bg-light">
-        <div class="container">
-            <div class="row g-0 rounded-4 overflow-hidden shadow-sm">
 
-                <div class="col-lg-6 text-white d-flex align-items-center justify-content-center text-center p-5" style="
-          min-height: 450px;
-          background:
-            linear-gradient(rgba(76, 32, 130, 0.85), rgba(76, 32, 130, 0.85)),
-            url('images/prayer.jpg') center/cover no-repeat;
-        ">
-                    <div>
-                        <div class="mb-3 fs-2"></div>
-                        <h2 class="display-6 fw-bold mb-3">
-                            How Can We Pray for You?
+    <div class="container my-3" id="visit-card">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 align-self-stretch d-flex justify-content-center align-items-center py-3">
+                <div class="cta-card visit-card w-100">
+                    <div class="cta-overlay"></div>
+
+                    <div class="cta-content">
+                        <div class="cta-icon visit-icon" id="visit-card">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <span class="cta-label"> We'd Love To Meet You </span>
+
+                        <h2>
+                            Planning to
+                            <span>Visit?</span>
                         </h2>
-                        <p class="mb-4 text-light">
-                            Our prayer team is dedicated to lifting up your burdens
-                            and celebrating your joys. You are never alone.
+
+                        <p>
+                            Let us know you're coming. We'll have a warm welcome ready for
+                            you and help answer any questions about our services.
                         </p>
-                        <a href="#" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold">
-                            Submit Prayer Request
+
+                        <a href="#" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold">
+                            Plan Your Visit
+                            <span class="ms-2">→</span>
                         </a>
                     </div>
                 </div>
-
-                <!-- Visit -->
-                <div class="col-12 col-lg-6">
-                    <div class="cta-card visit-card">
-                        <div class="cta-overlay"></div>
-
-                        <div class="cta-content">
-                            <div class="cta-icon visit-icon">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </div>
-
-                            <span class="cta-label"> We'd Love To Meet You </span>
-
-                            <h2>
-                                Planning to
-                                <span>Visit?</span>
-                            </h2>
-
-                            <p>
-                                Let us know you're coming. We'll have a warm welcome ready for
-                                you and help answer any questions about our services.
-                            </p>
-
-                            <a href="#" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold">
-                                Plan Your Visit
-                                <span class="ms-2">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+
     <section class="leadership-section py-5" id="leadership">
         <div class="container py-lg-5">
             <!-- Section Header -->
@@ -447,7 +430,7 @@
                         </div>
 
                         <!-- CTA -->
-                        <a href="#" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold">
+                        <a href="story.html" class="btn btn-primary rounded-pill px-4 py-3 fw-semibold">
                             Read Full Story
                             <span class="ms-2">→</span>
                         </a>
@@ -491,7 +474,7 @@
                             God's direction for our church and community.
                         </p>
 
-                        <a href="#" class="ministry-link">
+                        <a href="story.html" class="ministry-link">
                             Learn More
                             <span>→</span>
                         </a>
@@ -514,7 +497,7 @@
                             where everyone can worship comfortably.
                         </p>
 
-                        <a href="#" class="ministry-link">
+                        <a href="story.html" class="ministry-link">
                             Learn More
                             <span>→</span>
                         </a>
@@ -537,7 +520,7 @@
                             and connect people beyond our physical gatherings.
                         </p>
 
-                        <a href="#" class="ministry-link">
+                        <a href="story.html" class="ministry-link">
                             Learn More
                             <span>→</span>
                         </a>
@@ -560,7 +543,7 @@
                             heart devoted to glorifying God.
                         </p>
 
-                        <a href="#" class="ministry-link">
+                        <a href="story.html" class="ministry-link">
                             Learn More
                             <span>→</span>
                         </a>
@@ -569,65 +552,244 @@
             </div>
         </div>
     </section>
-    <div class="container text-center py-5" id="sermons">
-        <p class="text-primary fw-bold text-uppercase mb-2">Listen with us</p>
-        <h2 class="display-5 fw-bold mb-3">Watch Our Sermons</h2>
-        <p class="lead text-muted mx-auto" style="max-width: 700px">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-            aliquid rerum ratione nemo distinctio odit est culpa qui iure? Ad,
-            numquam? Mollitia molestiae ratione pariatur natus repellendus tempore
-            reiciendis maxime.
-        </p>
-    </div>
 
-    <section class="py-5 py-lg-6 bg-light">
-        <div class="container">
-            <div class="row">
+    <section class="py-5" style="background-color: var(--cream);">
+        <div class="container py-lg-4">
+            <div class="row g-5">
+
+                <!-- Left Column: Sermons List -->
                 <div class="col-12 col-lg-8">
-                    <div class="d-flex gap-3 pb-4 mb-4 border-bottom">
-                        <img src="bcc-assets/SaveClip.App_589120305_17942203803082699_1785629103924585609_n.jpg"
-                            class="rounded-3 flex-shrink-0" width="110" height="70" alt="Sermon 1"
-                            style="object-fit: cover" />
-                        <div class="flex-grow-1">
-                            <small class="text-uppercase text-primary fw-semibold d-block">May 5, 2026</small>
-                            <h6 class="fw-bold mb-1">The Power of Persistent Prayer</h6>
-                            <small class="text-muted">42 min • Pastor David Teminijesu</small>
+
+                    <!-- Sermon Item 1 -->
+                    <div class="sermon-row-card bg-white p-4 rounded-4 shadow-sm mb-4 border">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="position-relative overflow-hidden rounded-3 ratio ratio-16x9">
+                                    <img src="bcc-assets/SaveClip.App_589120305_17942203803082699_1785629103924585609_n.jpg"
+                                        alt="Sermon Thumbnail" class="w-100 h-100 object-fit-cover" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h4 class="fw-bold mb-2"><a href="#" class="text-decoration-none"
+                                        style="color: var(--dark-brown);">Walking in the Footsteps of Faith</a></h4>
+                                <p class="text-muted small mb-0">Pastor David Teminijesu / Aug 11, 2026 / <a href="#"
+                                        class="text-primary text-decoration-none">Life Issues</a></p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-file-text fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i
+                                            class="bi bi-camera-video fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-image fs-6"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 d-flex justify-content-md-end gap-2">
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Listen Audio"><i class="bi bi-headphones"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Watch Video"><i class="bi bi-play-fill fs-5"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Download Media"><i class="bi bi-download"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 pb-4 mb-4 border-bottom">
-                        <img src="bcc-assets/SaveClip.App_589069326_17942203842082699_8927773287282173419_n.jpg"
-                            class="rounded-3 flex-shrink-0" width="110" height="70" alt="Sermon 2"
-                            style="object-fit: cover" />
-                        <div class="flex-grow-1">
-                            <small class="text-uppercase text-primary fw-semibold d-block">May 5, 2026</small>
-                            <h6 class="fw-bold mb-1">The Power of Persistent Prayer</h6>
-                            <small class="text-muted">42 min • Pastor Tunde Johnson</small>
+
+                    <!-- Sermon Item 2 -->
+                    <div class="sermon-row-card bg-white p-4 rounded-4 shadow-sm mb-4 border">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="position-relative overflow-hidden rounded-3 ratio ratio-16x9">
+                                    <img src="bcc-assets/SaveClip.App_589069326_17942203842082699_8927773287282173419_n.jpg"
+                                        alt="Sermon Thumbnail" class="w-100 h-100 object-fit-cover" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h4 class="fw-bold mb-2"><a href="#" class="text-decoration-none"
+                                        style="color: var(--dark-brown);">Feel The Love</a></h4>
+                                <p class="text-muted small mb-0">Pastor Tunde Johnson / Aug 11, 2026 / <a href="#"
+                                        class="text-primary text-decoration-none">Life Issues</a></p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-file-text fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i
+                                            class="bi bi-camera-video fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-image fs-6"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 d-flex justify-content-md-end gap-2">
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Listen Audio"><i class="bi bi-headphones"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Watch Video"><i class="bi bi-play-fill fs-5"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Download Media"><i class="bi bi-download"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 pb-4 mb-4 border-bottom">
-                        <img src="bcc-assets/SaveClip.App_588840946_17942203824082699_8627080490401221457_n.jpg"
-                            class="rounded-3 flex-shrink-0" width="110" height="70" alt="Sermon 3"
-                            style="object-fit: cover" />
-                        <div class="flex-grow-1">
-                            <small class="text-uppercase text-primary fw-semibold d-block">May 5, 2026</small>
-                            <h6 class="fw-bold mb-1">The Power of Persistent Prayer</h6>
-                            <small class="text-muted">42 min • Pastor Tunde Johnson</small>
+
+                    <!-- Sermon Item 3 -->
+                    <div class="sermon-row-card bg-white p-4 rounded-4 shadow-sm mb-4 border">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="position-relative overflow-hidden rounded-3 ratio ratio-16x9">
+                                    <img src="bcc-assets/SaveClip.App_588840946_17942203824082699_8627080490401221457_n.jpg"
+                                        alt="Sermon Thumbnail" class="w-100 h-100 object-fit-cover" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h4 class="fw-bold mb-2"><a href="#" class="text-decoration-none"
+                                        style="color: var(--dark-brown);">Warning to the Religious</a></h4>
+                                <p class="text-muted small mb-0">Pastor David Teminijesu / Aug 11, 2026 / <a href="#"
+                                        class="text-primary text-decoration-none">Life Issues</a></p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-file-text fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i
+                                            class="bi bi-camera-video fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-image fs-6"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 d-flex justify-content-md-end gap-2">
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Listen Audio"><i class="bi bi-headphones"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Watch Video"><i class="bi bi-play-fill fs-5"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Download Media"><i class="bi bi-download"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 pb-4 mb-4 border-bottom">
-                        <img src="bcc-assets/SaveClip.App_548870403_17933833824082699_6475995996761671218_n.jpg"
-                            class="rounded-3 flex-shrink-0" width="110" height="70" alt="Sermon 4"
-                            style="object-fit: cover" />
-                        <div class="flex-grow-1">
-                            <small class="text-uppercase text-primary fw-semibold d-block">May 5, 2026</small>
-                            <h6 class="fw-bold mb-1">The Power of Persistent Prayer</h6>
-                            <small class="text-muted">42 min • Pastor Tunde Johnson</small>
+
+                    <!-- Sermon Item 4 -->
+                    <div class="sermon-row-card bg-white p-4 rounded-4 shadow-sm mb-4 border">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-md-4">
+                                <div class="position-relative overflow-hidden rounded-3 ratio ratio-16x9">
+                                    <img src="bcc-assets/SaveClip.App_548870403_17933833824082699_6475995996761671218_n.jpg"
+                                        alt="Sermon Thumbnail" class="w-100 h-100 object-fit-cover" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <h4 class="fw-bold mb-2"><a href="#" class="text-decoration-none"
+                                        style="color: var(--dark-brown);">Walking On A Dream</a></h4>
+                                <p class="text-muted small mb-0">Pastor Tunde Johnson / Aug 11, 2026 / <a href="#"
+                                        class="text-primary text-decoration-none">Life Issues</a></p>
+                                <div class="d-flex gap-2 mt-3">
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-file-text fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i
+                                            class="bi bi-camera-video fs-6"></i></span>
+                                    <span
+                                        class="badge bg-light text-dark border rounded-circle p-2 d-flex align-items-center justify-content-center"
+                                        style="width: 30px; height: 30px;"><i class="bi bi-image fs-6"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 d-flex justify-content-md-end gap-2">
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Listen Audio"><i class="bi bi-headphones"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Watch Video"><i class="bi bi-play-fill fs-5"></i></a>
+                                <a href="#"
+                                    class="btn btn-action-icon rounded-circle d-flex align-items-center justify-content-center shadow-sm"
+                                    title="Download Media"><i class="bi bi-download"></i></a>
+                            </div>
                         </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Sidebar (Search & Topics) -->
+                <div class="col-12 col-lg-4">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+                        <h5 class="fw-bold mb-3" style="color: var(--dark-brown);">Search</h5>
+                        <form class="position-relative" role="search">
+                            <input class="form-control rounded-pill pe-5 py-2" type="search"
+                                placeholder="Type and search" aria-label="Search" />
+                            <button type="submit"
+                                class="btn position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-muted pe-3"><i
+                                    class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+                        <h5 class="fw-bold mb-3" style="color: var(--dark-brown);">Sermon Topics</h5>
+                        <ul class="list-unstyled mb-0 sidebar-list">
+                            <li class="py-2 border-bottom d-flex justify-content-between align-items-center"><a href="#"
+                                    class="text-decoration-none text-secondary">Life Issues</a> <span
+                                    class="badge bg-light text-dark rounded-pill">31</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between align-items-center"><a href="#"
+                                    class="text-decoration-none text-secondary">The Glory of God</a> <span
+                                    class="badge bg-light text-dark rounded-pill">25</span></li>
+                            <li class="py-2 border-bottom d-flex justify-content-between align-items-center"><a href="#"
+                                    class="text-decoration-none text-secondary">Family</a> <span
+                                    class="badge bg-light text-dark rounded-pill">16</span></li>
+                            <li class="py-2 d-flex justify-content-between align-items-center"><a href="#"
+                                    class="text-decoration-none text-secondary">Education</a> <span
+                                    class="badge bg-light text-dark rounded-pill">12</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <h5 class="fw-bold mb-3" style="color: var(--dark-brown);">Sermon Occasions</h5>
+                        <ul class="list-unstyled mb-0 sidebar-list">
+                            <li class="py-2 border-bottom"><a href="#"
+                                    class="text-decoration-none text-secondary">Christmas</a></li>
+                            <li class="py-2 border-bottom"><a href="#"
+                                    class="text-decoration-none text-secondary">Easter</a></li>
+                            <li class="py-2 border-bottom"><a href="#" class="text-decoration-none text-secondary">New
+                                    Year Revival</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none text-secondary">Special Sunday</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+    <!-- <section class="container text-center py-5" id="sermons">
+        <div class="container">
+            <p class="text-primary fw-bold text-uppercase mb-2">Listen with us</p>
+            <h2 class="display-5 fw-bold mb-3">Watch Our Sermons</h2>
+            <p class="lead text-muted mx-auto" style="max-width: 700px">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+                aliquid rerum ratione nemo distinctio odit est culpa qui iure? Ad,
+                numquam? Mollitia molestiae ratione pariatur natus repellendus tempore
+                reiciendis maxime.
+            </p>
+        </div>
+
+    </section> -->
+
+
 
     <section class="py-5 bg-light" id="gallery">
         <div class="container py-4">
@@ -645,37 +807,112 @@
             </div>
             <div class="row g-3">
                 <div class="col-lg-6">
-                    <img src="bcc-assets/SaveClip.App_588630435_17942203833082699_5519507931674446314_n.jpg"
-                        alt="Worship at Covenant of Light Church" class="img-fluid w-100 rounded-4 shadow-sm"
-                        style="height: 420px; object-fit: cover" />
+                    <div class="gallery-image-frame">
+                        <img src="bcc-assets/SaveClip.App_588630435_17942203833082699_5519507931674446314_n.jpg"
+                            alt="Worship at Covenant of Light Church" class="img-fluid w-100 rounded-4 shadow-sm"
+                            style="height: 420px; object-fit: cover" />
+                        <div class="gallery-image-overlay">
+                            <button type="button" class="gallery-action gallery-view-button"
+                                aria-label="View Worship at Covenant of Light Church">
+                                <i class="bi bi-eye" aria-hidden="true"></i><span>View</span>
+                            </button>
+                            <a class="gallery-action gallery-download-button" download
+                                aria-label="Download Worship at Covenant of Light Church">
+                                <i class="bi bi-download" aria-hidden="true"></i><span>Download</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <img src="bcc-assets/SaveClip.App_589163096_17942203794082699_2464735970967230007_n.jpg"
-                        alt="Church gathering" class="img-fluid w-100 rounded-4 shadow-sm mb-3"
-                        style="height: 200px; object-fit: cover" />
+                    <div class="gallery-image-frame mb-3">
+                        <img src="bcc-assets/SaveClip.App_548899195_17933833854082699_6763961500948215499_n.jpg"
+                            alt="Church gathering" class="img-fluid w-100 rounded-4 shadow-sm"
+                            style="height: 200px; object-fit: cover" />
+                        <div class="gallery-image-overlay">
+                            <button type="button" class="gallery-action gallery-view-button"
+                                aria-label="View Church gathering">
+                                <i class="bi bi-eye" aria-hidden="true"></i><span>View</span>
+                            </button>
+                            <a class="gallery-action gallery-download-button" download
+                                aria-label="Download Church gathering">
+                                <i class="bi bi-download" aria-hidden="true"></i><span>Download</span>
+                            </a>
+                        </div>
+                    </div>
 
-                    <img src="bcc-assets/SaveClip.App_589120305_17942203803082699_1785629103924585609_n.jpg"
-                        alt="Church worship" class="img-fluid w-100 rounded-4 shadow-sm"
-                        style="height: 200px; object-fit: cover" />
+                    <div class="gallery-image-frame">
+                        <img src="bcc-assets/SaveClip.App_589120305_17942203803082699_1785629103924585609_n.jpg"
+                            alt="Church worship" class="img-fluid w-100 rounded-4 shadow-sm"
+                            style="height: 200px; object-fit: cover" />
+                        <div class="gallery-image-overlay">
+                            <button type="button" class="gallery-action gallery-view-button"
+                                aria-label="View Church worship">
+                                <i class="bi bi-eye" aria-hidden="true"></i><span>View</span>
+                            </button>
+                            <a class="gallery-action gallery-download-button" download
+                                aria-label="Download Church worship">
+                                <i class="bi bi-download" aria-hidden="true"></i><span>Download</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <img src="bcc-assets/IMG-20260805-WA0022.jpg" alt="Church fellowship"
-                        class="img-fluid w-100 rounded-4 shadow-sm mb-3" style="height: 200px; object-fit: cover" />
+                    <div class="gallery-image-frame mb-3">
+                        <img src="bcc-assets/IMG-20260805-WA0022.jpg" alt="Church fellowship"
+                            class="img-fluid w-100 rounded-4 shadow-sm" style="height: 200px; object-fit: cover" />
+                        <div class="gallery-image-overlay">
+                            <button type="button" class="gallery-action gallery-view-button"
+                                aria-label="View Church fellowship">
+                                <i class="bi bi-eye" aria-hidden="true"></i><span>View</span>
+                            </button>
+                            <a class="gallery-action gallery-download-button" download
+                                aria-label="Download Church fellowship">
+                                <i class="bi bi-download" aria-hidden="true"></i><span>Download</span>
+                            </a>
+                        </div>
+                    </div>
 
-                    <img src="bcc-assets/SaveClip.App_521879291_17927526930082699_8237539527792917255_n.jpg"
-                        alt="Church event" class="img-fluid w-100 rounded-4 shadow-sm"
-                        style="height: 200px; object-fit: cover" />
+                    <div class="gallery-image-frame">
+                        <img src="bcc-assets/SaveClip.App_521879291_17927526930082699_8237539527792917255_n.jpg"
+                            alt="Church event" class="img-fluid w-100 rounded-4 shadow-sm"
+                            style="height: 200px; object-fit: cover" />
+                        <div class="gallery-image-overlay">
+                            <button type="button" class="gallery-action gallery-view-button"
+                                aria-label="View Church event">
+                                <i class="bi bi-eye" aria-hidden="true"></i><span>View</span>
+                            </button>
+                            <a class="gallery-action gallery-download-button" download
+                                aria-label="Download Church event">
+                                <i class="bi bi-download" aria-hidden="true"></i><span>Download</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary rounded-pill px-4 py-2">
+                <a href="gallery.html" class="btn btn-primary rounded-pill px-4 py-2">
                     View More Moments
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="connected-section py-5 py-lg-6 bg-white">
+    <div class="gallery-lightbox" id="galleryLightbox" role="dialog" aria-modal="true"
+        aria-labelledby="galleryLightboxTitle" hidden>
+        <div class="gallery-lightbox-backdrop" data-lightbox-close></div>
+        <div class="gallery-lightbox-content">
+            <button type="button" class="gallery-lightbox-close" data-lightbox-close aria-label="Close image viewer">
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+            </button>
+            <h2 id="galleryLightboxTitle" class="visually-hidden">Gallery image preview</h2>
+            <img class="gallery-lightbox-image" alt="" />
+            <a class="gallery-lightbox-download btn btn-primary rounded-pill" download>
+                <i class="bi bi-download" aria-hidden="true"></i> Download image
+            </a>
+        </div>
+    </div>
+
+    <section class="connected-section py-5 py-lg-6 bg-white" id="contact">
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">Stay Connected</h2>
             <p class="lead text-muted mx-auto mb-5" style="max-width: 700px">
@@ -684,6 +921,29 @@
                 autem.
             </p>
 
+            <!-- Social Links -->
+            <div class="contact-socials" aria-label="Church social media links">
+
+                <a href="https://facebook.com/_bccglobal/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook" class="contact-social-link">
+                    <i class="bi bi-facebook"></i>
+
+                    <a href="https://www.instagram.com/_bccglobal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="contact-social-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://t.me/theprayingchurch" target="_blank" rel="noopener noreferrer"
+                        aria-label="Telegram" class="contact-social-link">
+                        <i class="bi bi-send"></i>
+                    </a>
+                    <a href="https://youtube.com/@berithorchristiancentre?si=shkrdlYekAgdF0GOso" target="_blank"
+                        rel="noopener noreferrer" aria-label="YouTube" class="contact-social-link">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+            </div>
+            <!--
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-stretch mb-5"
                 style="gap: 1rem">
                 <input type="email" class="form-control rounded-pill px-4 py-3" placeholder="Enter your email"
@@ -691,7 +951,7 @@
                 <button class="btn btn-primary rounded-pill px-5 py-3 fw-semibold" type="button">
                     Subscribe
                 </button>
-            </div>
+            </div> -->
 
             <!-- <p class="mt-4 text-muted small">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quam?
@@ -732,21 +992,23 @@
 
 
                     <!-- Social Links -->
-                    <div class="footer-socials">
+                    <div class="footer-socials d-flex align-items-center gap-3 m-3"
+                        aria-label="Church social media links">
 
-                        <a href="#" aria-label="Facebook" class="social-link">
+                        <a href="https://facebook.com/_bccglobal/" aria-label="Facebook" class="social-link">
                             <i class="bi bi-facebook"></i>
                         </a>
 
-                        <a href="#" aria-label="Instagram" class="social-link">
+                        <a href="https://www.instagram.com/_bccglobal/" aria-label="Instagram" class="social-link">
                             <i class="bi bi-instagram"></i>
                         </a>
 
-                        <a href="#" aria-label="X" class="social-link">
-                            <i class="bi bi-twitter-x"></i>
+                        <a href="https://t.me/theprayingchurch" aria-label="Telegram" class="social-link">
+                            <i class="bi bi-send"></i>
                         </a>
 
-                        <a href="#" aria-label="YouTube" class="social-link">
+                        <a href="https://youtube.com/@berithorchristiancentre?si=e_oun9MC4tLMzQzh" aria-label="YouTube"
+                            class="social-link">
                             <i class="bi bi-youtube"></i>
                         </a>
 
@@ -815,7 +1077,7 @@
                         </strong>
 
                         <span>
-                            9:00 AM &amp; 11:00 AM
+                            9:00 AM
                         </span>
 
                     </div>
@@ -828,13 +1090,8 @@
                         </strong>
 
                         <span>
-                            7:00 PM
+                            6:00 PM
                         </span>
-
-                        <small>
-                            Bible Study
-                        </small>
-
                     </div>
 
                 </div>
@@ -895,16 +1152,14 @@
                 </p>
             </div>
 
-            <script src="bcc-script.js"></script>
+        </div>
+    </footer>
 
+    <script src="bcc-script.js"></script>
 
-</body>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
