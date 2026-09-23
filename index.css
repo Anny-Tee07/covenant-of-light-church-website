@@ -1,18 +1,6 @@
 /* =========================
    GLOBAL STYLES
 ========================= */
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-img,
-.container,
-.container-fluid,
-.row {
-    max-width: 100%;
-}
 
 :root {
     --deep-red: #5C1624;
@@ -41,6 +29,8 @@ img,
     --section-space: clamp(4rem, 8vw, 6rem);
     --card-radius: 20px;
 }
+
+
 
 *,
 *::before,
