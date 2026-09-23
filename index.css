@@ -1,6 +1,18 @@
 /* =========================
    GLOBAL STYLES
 ========================= */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+.container,
+.container-fluid,
+.row {
+    max-width: 100%;
+}
 
 :root {
     --deep-red: #5C1624;
@@ -1412,8 +1424,8 @@ body .text-primary:focus {
     font-size: 0.8rem;
 }
 
-.footer-bottom-story{
-     display: flex;
+.footer-bottom-story {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -1525,6 +1537,13 @@ body .text-primary:focus {
     #churchHeroCarousel .carousel-indicators {
         bottom: 20px;
         margin-left: 7%;
+    }
+
+    @media (max-width: 768px) {
+        #churchHeroCarousel .carousel-indicators {
+            bottom: 15px !important;
+            margin-left: 5% !important;
+        }
     }
 
     .events-section {
