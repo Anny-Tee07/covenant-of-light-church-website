@@ -79,6 +79,52 @@ p {
     padding-bottom: var(--section-space);
 }
 
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel {
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-item img {
+    filter: blur(4px);
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption {
+      padding: 20px !important;
+      bottom: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .carousel-caption h5 {
+      font-size: 1.5rem !important;
+    }
+
+    .carousel-caption p {
+      font-size: 0.9rem !important;
+      margin-bottom: 15px !important;
+    }
+
+    .btn {
+      font-size: 0.85rem !important;
+      padding: 0.5rem 1rem !important;
+    }
+  }
+
+
 /* =========================
    NAVBAR
 ========================= */
