@@ -143,14 +143,12 @@ p {
 ========================= */
 
 #churchHeroCarousel {
-    /* Remove negative margin and broken height percentage */
     margin-top: 0;
 }
 
 .hero-image,
 .carousel-item img {
     width: 100%;
-    /* Balanced height range that scales smoothly from mobile to desktop */
     height: clamp(500px, 65vw, 680px);
     object-fit: cover;
     object-position: center top;
@@ -164,6 +162,8 @@ p {
             rgba(var(--deep-red-rgb), 0.66) 55%,
             rgba(var(--deep-red-rgb), 0.22) 100%);
 }
+
+
 
 #churchHeroCarousel .carousel-caption {
     position: absolute;
@@ -329,6 +329,36 @@ body .text-primary:focus {
 /* =========================
    EVENTS
 ========================= */
+/* .carousel-item {
+    height: 600px;
+    ;
+}
+
+ .carousel-item img {
+    filter: blur(4px);
+    /* margin-bottom: 30px; 
+} 
+
+.carousel-caption {
+    bottom: 0;
+    top: 0;
+    /* background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+} 
 
 .event-card,
 .ministry-card,
@@ -416,7 +446,7 @@ body .text-primary:focus {
     font-weight: 700;
 }
 
-.event-content p,
+ .event-content p, 
 .ministry-card p {
     color: var(--gold-brown);
     font-size: 0.95rem;
@@ -427,7 +457,7 @@ body .text-primary:focus {
     margin-bottom: 22px;
 }
 
-.event-link,
+ .event-link, 
 .ministry-link {
     display: inline-flex;
     align-items: center;
@@ -531,6 +561,25 @@ body .text-primary:focus {
 /* =========================
    LEADERSHIP
 ========================= */
+
+.btn-primary-leader {
+    margin-left: 42%;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    border-radius: 24px;
+    width: 200px;
+    background-color: var(--primary-red) !important;
+    border-color: var(--primary-red) !important;
+    color: var(--white) !important;
+}
+
+.btn-primary-leader a {
+    text-decoration: none;
+    color: white;
+}
 
 .leader-image-wrapper {
     position: relative;
@@ -1415,7 +1464,6 @@ body .text-primary:focus {
 }
 
 <<<<<<< HEAD
-
 /* For my gallery */
 
 /
@@ -1428,7 +1476,7 @@ body .text-primary:focus {
 
 .container {
     max-width: 100%;
-   
+
 }
 
 .header {
@@ -1518,8 +1566,7 @@ body .text-primary:focus {
 }
 
 /* Responsive layout */
-=======
-.footer-bottom-story {
+=======.footer-bottom-story {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1538,9 +1585,7 @@ body .text-primary:focus {
 /* =========================
    RESPONSIVE STYLES
 ========================= */
->>>>>>> b688ba24cfb4e214a398e86e3d7bc316b35cb853
-
-@media (max-width: 991.98px) {
+>>>>>>>b688ba24cfb4e214a398e86e3d7bc316b35cb853 @media (max-width: 991.98px) {
     .navbar.fixed-top .container {
         gap: 0;
     }
