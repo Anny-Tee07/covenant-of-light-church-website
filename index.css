@@ -743,15 +743,26 @@ body .text-primary:focus {
 }
 
 /* =========================
-   PRAYER & VISIT CTA
+   PASTOR & VISIT CTA
 ========================= */
+
+.bottom-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    gap: 150px;
+}
+
 
 .cta-card {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 480px;
+    min-height: 400px;
+    /* width: 200px; */
     overflow: hidden;
     border-radius: 24px;
     background-position: center;
@@ -769,6 +780,13 @@ body .text-primary:focus {
     background-image: url("bcc-assets/IMG_1785.JPG");
     background-position: top center;
     background-size: cover;
+    /* width: 200px; */
+}
+
+.pastor-card {
+    background-image: url("bcc-assets/Pastors.jpg");
+    background-position: top center;
+    background-size: cover;
 }
 
 .visit-card .cta-overlay {
@@ -781,11 +799,21 @@ body .text-primary:focus {
     background-size: cover;
 }
 
+.pastor-card .cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(var(--white-rgb), 0.7),
+            rgba(var(--cream-rgb), 0.72));
+    background-position: top center;
+    background-size: cover;
+}
+
 .cta-content {
     position: relative;
     z-index: 2;
-    max-width: 500px;
-    padding: 40px 25px;
+    /* max-width: 500px; */
+    /* padding: 40px 25px; */
     text-align: center;
 }
 
@@ -811,6 +839,15 @@ body .text-primary:focus {
     text-transform: uppercase;
 }
 
+.cta-label-pastors {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 .visit-card h2 {
     color: var(--dark-brown);
 }
@@ -828,6 +865,8 @@ body .text-primary:focus {
     font-size: 1rem;
     line-height: 1.7;
 }
+
+
 
 /* =========================
    MINISTRIES
