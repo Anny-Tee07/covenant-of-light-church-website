@@ -15,9 +15,10 @@
 
 <body>
     <!-- Navbar (Consistent with Homepage) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#home">
                 <img src="bcc-assets/ChatGPT Image Aug 5, 2026, 03_43_39 PM.png" alt="Church Logo" width="40"
                     height="40" class="rounded-circle me-2" />
                 <span>Covenant of Light Church</span>
@@ -29,27 +30,39 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Navbar Content -->
+            <!-- Navbar Content (Stacked vertically on mobile, horizontal on lg screens) -->
             <div class="collapse navbar-collapse flex-lg-row flex-column w-100" id="mainNavbar">
+                <!-- Navigation Links -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-lg-start">
-                    <li class="nav-item"><a class="nav-link mx-lg-2" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link mx-lg-2" href="story.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link mx-lg-2" href="index.html#events">Events</a></li>
-                    <li class="nav-item"><a class="nav-link mx-lg-2" href="index.html#sermons">Sermons</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="index.html"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="story.html"> About </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="event.html"> Events </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="gallery.html"> Gallery </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="sermon.html"> Sermons </a>
+                    </li>
                 </ul>
 
-                <div class="d-flex flex-column flex-lg-row align-items-center gap-3 ms-lg-3 pb-2 pb-lg-0">
-                    <!-- <div class="d-flex gap-3 text-white fs-5">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    </div> -->
-                    <a href="index.html#about" class="btn btn-primary">Join Us</a>
+                <div class="ms-lg-3 text-center pb-2 pb-lg-0">
+                    <a href="#visit-card" class="btn btn-primary">Join Us</a>
                 </div>
+
+
             </div>
         </div>
     </nav>
-
     <!-- Page Hero Section -->
     <header class="position-relative d-flex align-items-center justify-content-center text-center text-white"
         style="min-height: 50vh; background: linear-gradient(rgba(46, 33, 24, 0.75), rgba(46, 33, 24, 0.75)), url('bcc-assets/IMG-20260412-WA0040.jpg') center/cover no-repeat; margin-top: 76px;">
@@ -389,10 +402,9 @@
 
 
                     <p class="footer-description">
-                        Sharing the light of Christ through love, service,
-                        and community. Join us as we grow in faith and walk
-                        together in God's purpose.
-                    </p>
+                        God has called us to raise excellent saints who will dominate their world through a
+                        lifestyle
+                        of Joy and Intimacy. </p>
 
 
                     <!-- Social Links -->

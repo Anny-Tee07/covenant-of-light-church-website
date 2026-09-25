@@ -79,50 +79,51 @@ p {
     padding-bottom: var(--section-space);
 }
 
-  html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
     overflow-y: scroll;
-  }
+}
 
-  body {
+body {
     margin: 0;
     padding: 0;
-  }
+}
 
-  .carousel {
+.carousel {
     max-width: 100%;
     width: 100%;
     overflow: hidden;
-  }
+}
 
-  .carousel-item img {
+.carousel-item img {
     filter: blur(4px);
     object-fit: cover;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .carousel-caption {
-      padding: 20px !important;
-      bottom: 0;
-      top: 0;
-      background: rgba(0, 0, 0, 0.6);
+        padding: 20px !important;
+        bottom: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.6);
     }
 
     .carousel-caption h5 {
-      font-size: 1.5rem !important;
+        font-size: 1.5rem !important;
     }
 
     .carousel-caption p {
-      font-size: 0.9rem !important;
-      margin-bottom: 15px !important;
+        font-size: 0.9rem !important;
+        margin-bottom: 15px !important;
     }
 
     .btn {
-      font-size: 0.85rem !important;
-      padding: 0.5rem 1rem !important;
+        font-size: 0.85rem !important;
+        padding: 0.5rem 1rem !important;
     }
-  }
+}
 
 
 /* =========================
@@ -182,6 +183,30 @@ p {
 .navbar.fixed-top .footer-socials .social-link {
     width: 34px;
     height: 34px;
+}
+
+@media (max-width: 991px) {
+    .navbar.fixed-top .container {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .navbar.fixed-top #mainNavbar .navbar-nav {
+        justify-content: flex-start;
+        gap: 0.75rem;
+        margin-right: 0 !important;
+        padding: 1rem 0;
+    }
+
+    .navbar.fixed-top #mainNavbar .nav-link {
+        white-space: normal;
+        padding: 0.5rem 0;
+    }
+
+    .navbar.fixed-top .footer-socials {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
 }
 
 /* =========================
@@ -247,7 +272,7 @@ p {
 }
 
 .hero-content h1 {
-    max-width: 850px;
+    max-width: 800px;
     margin-bottom: 25px;
     font-size: clamp(2.5rem, 6vw, 5.5rem);
     font-weight: 700;
@@ -313,6 +338,43 @@ p {
     .hero-content p {
         font-size: clamp(0.9rem, 2vw, 1.1rem);
     }
+
+    #churchHeroCarousel .hero-content {
+        max-width: 750px !important;
+        width: 100%;
+    }
+
+    #churchHeroCarousel .carousel-indicators {
+        bottom: 18px !important;
+        margin-left: 8% !important;
+        z-index: 10;
+    }
+
+    #churchHeroCarousel .hero-content .hero-buttons,
+    #churchHeroCarousel .carousel-caption {
+        padding-bottom: 35px !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #churchHeroCarousel .hero-content h1 {
+        font-size: 1.8rem !important;
+    }
+
+    #churchHeroCarousel .hero-content p {
+        font-size: 0.85rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    #churchHeroCarousel .carousel-indicators {
+        bottom: 12px !important;
+        margin-left: 5% !important;
+    }
+
+    #churchHeroCarousel .hero-content .hero-buttons {
+        gap: 8px !important;
+    }
 }
 
 /* =========================
@@ -375,25 +437,41 @@ body .text-primary:focus {
 /* =========================
    EVENTS
 ========================= */
-/* .carousel-item {
-    height: 600px;
-    ;
+
+.visit-card {
+    /* background: linear-gradient(135deg, rgba(var(--dark-brown-rgb), 0.95), rgba(var(--deep-red-rgb), 0.9));*/
+    min-height: 520px;
 }
 
- .carousel-item img {
-    filter: blur(4px);
-    /* margin-bottom: 30px; 
-} 
+.visit-card .cta-overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(var(--dark-brown-rgb), 0.4) 0%,
+            rgba(var(--dark-brown-rgb), 0.88) 70%,
+            rgba(var(--dark-brown-rgb), 0.96) 100%);
+}
 
-.carousel-caption {
-    bottom: 0;
-    top: 0;
-    /* background: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* padding: 40px; */
+/* Pastors Card Overlay */
+.pastors-card {
+    min-height: 520px;
+}
+
+.pastors-card .cta-overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(var(--dark-brown-rgb), 0.4) 0%,
+            rgba(var(--dark-brown-rgb), 0.88) 70%,
+            rgba(var(--dark-brown-rgb), 0.96) 100%);
+}
+
+/* Responsive grid height balance */
+@media (min-width: 992px) {
+    .visit-pastors-section .row {
+        display: flex;
+    }
+}
 
 
 .carousel-caption h5 {
@@ -404,7 +482,7 @@ body .text-primary:focus {
 .carousel-caption p {
     font-size: 1.1rem;
     margin-bottom: 20px;
-} 
+}
 
 .event-card,
 .ministry-card,
@@ -492,7 +570,7 @@ body .text-primary:focus {
     font-weight: 700;
 }
 
- .event-content p, 
+.event-content p,
 .ministry-card p {
     color: var(--gold-brown);
     font-size: 0.95rem;
@@ -503,7 +581,7 @@ body .text-primary:focus {
     margin-bottom: 22px;
 }
 
- .event-link, 
+.event-link,
 .ministry-link {
     display: inline-flex;
     align-items: center;
@@ -746,7 +824,7 @@ body .text-primary:focus {
    PASTOR & VISIT CTA
 ========================= */
 
-.bottom-card{
+.bottom-card {
     display: flex;
     justify-content: space-between;
     margin: 70px;
@@ -1670,7 +1748,7 @@ body .text-primary:focus {
 /* =========================
    RESPONSIVE STYLES
 ========================= */
->>>>>>>b688ba24cfb4e214a398e86e3d7bc316b35cb853 @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
     .navbar.fixed-top .container {
         gap: 0;
     }
